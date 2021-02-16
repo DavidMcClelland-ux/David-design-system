@@ -7,7 +7,7 @@
     overflow: hidden;
     margin-bottom: map-get($base-spacing, '4');
     @include md {
-        margin-bottom: map-get($base-spacing, '5');
+        margin-bottom: map-get($base-spacing, '8');
     }
     iframe {
         position: absolute;
