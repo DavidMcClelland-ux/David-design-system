@@ -99,7 +99,6 @@ max-width: 1016px;
     text-decoration: none; 
     padding:1.1rem .1rem;
     display:block;
-    background-color: map-get($base-colours, 'white');
     margin:.3rem 0;
       @include md {
         padding:1.5rem .8rem;
