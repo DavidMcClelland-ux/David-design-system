@@ -1,0 +1,46 @@
+.base-button {
+  font-family: $base-font-family;
+  font-size: map-get($base-font-sizes, "text");
+  line-height: $base-line-height;
+  font-weight: $base-font-weight-bold;
+  color: $base-font-colour;
+  padding: 1rem 1.4rem;
+  border: 2px solid $base-font-colour;
+  border-radius: 0;
+  background-color: map-get($base-colours, "white");
+  box-shadow: 0 0 0 0.1rem map-get($base-colours, "white");
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: auto;
+  margin-top: map-get($base-spacing, "1");
+  margin-left: 0;
+  margin-right: map-get($base-spacing, "3");
+  margin-bottom: map-get($base-spacing, "6");
+  &:focus {
+    @include focus-style;
+  }
+  &:hover {
+    background-color: map-get($base-colours, "black");
+    color: map-get($base-colours, "white");
+  }
+  &:active {
+    top: 0.2rem;
+  }
+}
+
+.base-button-group {
+  display: block;
+  margin-bottom: map-get($base-spacing, "3");
+  .base-button {
+    margin-bottom: map-get($base-spacing, "4");
+  }
+}
+
+/* colouring selector to colour button by class */
+
+@each $name, $value in $base-colours {
+  .base-button--#{$name} {
+    background-color: $value;
+  }
+}

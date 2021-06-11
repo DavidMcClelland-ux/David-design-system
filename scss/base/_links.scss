@@ -1,0 +1,59 @@
+// default set up to use new underlines
+$base-font-underline: true;
+
+// new text decoration settings
+@mixin base-link-decoration {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+
+  @if ($base-font-underline) {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.1rem;
+  }
+}
+
+@mixin base-link-decoration--hover {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+
+  @if ($base-font-underline) {
+    text-decoration-thickness: 3px;
+  }
+}
+
+.base-link {
+  cursor: pointer;
+  color: $base-link-colour;
+  @include base-link-decoration;
+  /* background-color: map-get($base-colours, "white"); */
+  /* padding:1px; */
+  &:link {
+    color: $base-link-colour;
+  }
+  &:visited {
+    color: $base-link-colour--visited;
+  }
+  &:hover {
+    color: $base-link-colour--hover;
+    @include base-link-decoration--hover;
+  }
+  &:focus {
+    @include focus-style;
+    background-color: map-get($base-colours, "white");
+    color: map-get($base-colours, "black") !important;
+  }
+}
+
+/* styling to match colour of link to text colour on coloured backgrounds to maintain colour contrast */
+.base-link--textcolor {
+  color: inherit !important;
+  &:link {
+    color: inherit !important;
+  }
+  &:hover {
+    color: inherit !important;
+  }
+  &:visited {
+    color: inherit !important;
+  }
+}

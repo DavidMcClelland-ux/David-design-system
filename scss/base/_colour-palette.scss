@@ -1,13 +1,26 @@
 $base-colours: (
-  'blue': #0e78cf,
-  'dark-blue': #00447B,
-  'purple': #592EAF,
-  'black': #000000,
-  'yellow': #ffdd00,
-  'white': #Ffffff,
-  'green': #00C78A,
+  'blue': #47a7ff,
+  'light-blue': #6cd1ff,
+  'teal': #46d4b0,
+  'light-teal': #a8e8dc,
+  'pink': #ff7d7d,
+  'light-pink': #ffb5b1,
+  'yellow': #ffdb65,
+  'light-yellow': #fff099,
+  'white': #ffffff,
   'gray': #959595,
+  'black': #000000,
   'blank': transparent,
-  'pink': #EB5353,
-  'red': #f33f33,
 );
+
+$base-link-colours: (
+  'blue': #006bc3,
+  'dark-blue': #00447B,
+  'purple': #6935d2,
+);
+
+$base-focus-colours: (
+ 'blue': #2373ff,
+ 'pink': #e00099,
+ 'purple': #8c00d2,
+) 

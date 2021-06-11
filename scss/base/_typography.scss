@@ -1,9 +1,4 @@
-/* colours variables for text */
-$base-font-colour: map-get($base-colours, 'black');
-$base-heading-colour: map-get($base-colours, 'black');
-$base-link-colour: map-get($base-colours, 'blue');
-$base-link-colour--hover: map-get($base-colours, 'dark-blue');
-$base-link-colour--visited: map-get($base-colours, 'purple');
+
 
 /* default heading & text setup */
 @mixin baseheading {
@@ -136,24 +131,6 @@ $base-link-colour--visited: map-get($base-colours, 'purple');
 
 .base-list--bullet {
   list-style-type: disc; 
-}
-
-.base-link {
-  cursor: pointer;
-  color: $base-link-colour;
-  text-decoration: underline; 
-  &:link {
-    color: $base-link-colour;
-  }
-  &:hover {
-    color: $base-link-colour--hover;
-  }
-  &:visited {
-    color: $base-link-colour--visited;
-  }
-  &:focus {
-    @include focus-style;
-  }
 }
 
 .base-body-block {
