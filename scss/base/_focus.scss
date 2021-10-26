@@ -1,5 +1,15 @@
 @mixin focus-style {
-    outline: 3px solid map-get($base-focus-colours, 'blue') ;
+    outline: 3px solid map-get($base-focus-colours, "blue");
     outline-offset: 2px;
-    box-shadow: 0 0 0 6px map-get($base-colours, 'white') !important;
+    box-shadow: 0 0 0 6px map-get($base-colours, "white") !important;
+    // When in an explicit forced-color mode, we can use the Highlight system
+    // color for the outline to better match focus states of native controls
+    @media screen and (forced-colors: active), (-ms-high-contrast: active) {
+        outline-color: Highlight;
+    }
+}
+
+/* For elements that do not have focus but have been given a tab index to focus on */
+[tabindex="-1"]:focus {
+    @include focus-style;
 }

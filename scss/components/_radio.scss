@@ -1,0 +1,88 @@
+$base-radio-endsize: px-to-rem(44);
+$base-radio-borderwidth: px-to-rem(2);
+$base-radio-dotsize: px-to-rem(24);
+$base-radio-dotborder: px-to-rem(12);
+$base-radio-dotspacing: ($base-radio-endsize - $base-radio-dotsize) / 2;
+$base-radio-label-fontsize: map-get($base-font-sizes, "text");
+$base-radio-label-fontsize-mobile: map-get($base-font-sizes, "text-sm");
+$base-radio-label-padding-top: ($base-radio-endsize - ($base-line-height * $base-radio-label-fontsize)) / 2;
+$base-radio-label-padding-top-mobile: ($base-radio-endsize - ($base-line-height * $base-radio-label-fontsize-mobile)) /
+    2;
+
+.base-radio__item {
+    display: block;
+    position: relative;
+    margin-bottom: map-get($base-spacing, "3");
+    @include md {
+        margin-bottom: map-get($base-spacing, "3");
+    }
+    &:last-of-type {
+        margin-bottom:0;
+    }
+}
+
+.base-radio__label {
+    display: block;
+    margin-bottom: 0;
+    cursor: pointer;
+    padding-top: $base-radio-label-padding-top-mobile;
+    padding-left: $base-radio-endsize + map-get($base-spacing, "4");
+    min-height: $base-radio-endsize;
+    font-family: $base-font-family;
+    font-size: $base-radio-label-fontsize-mobile;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight-regular;
+    color: $base-font-colour;
+    @include md {
+        font-size: $base-radio-label-fontsize;
+        padding-top: $base-radio-label-padding-top;
+    }
+    // remove 300ms pause on mobile
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+//radio ring
+.base-radio__label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $base-radio-endsize;
+    height: $base-radio-endsize;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+}
+
+// radio dot when checked
+.base-radio__label:after {
+    content: "";
+    position: absolute;
+    top: $base-radio-dotspacing;
+    left: $base-radio-dotspacing;
+    width: 0;
+    height: 0;
+    border: $base-radio-dotborder solid currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: currentColor;
+}
+
+// hide browser default radio component
+.base-radio__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    width: $base-radio-endsize;
+    height: $base-radio-endsize;
+}
+
+.base-radio__input:checked + .base-radio__label:after {
+    opacity: 1;
+}
+
+.base-radio__input:focus + .base-radio__label {
+    @include focus-style;
+}

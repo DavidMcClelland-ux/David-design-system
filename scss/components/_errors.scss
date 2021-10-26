@@ -1,0 +1,10 @@
+.base-form-group--error {
+    border-width: 0 0 0 px-to-rem(15);
+    border-style: double;
+    border-left-color: map-get($base-colours, 'dark-pink');
+    padding-left: map-get($base-spacing, '5');
+    @include md {
+        border-width: 0 0 0 px-to-rem(18);
+        padding-left: map-get($base-spacing, '6');
+    }
+}

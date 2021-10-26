@@ -1,0 +1,222 @@
+<!doctype html>
+
+<html lang="en" class="base-html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>side nav | scss - setup</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="base-bg--off-white">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+  </script>
+  <header role="banner" class="base-font--white">
+    <div class="base-header base-bg--black ">
+      <div class=" base-width-container base-header-flex">
+        <div class="base-header-logo">david design system</div>
+        <button class="base-navbutton" type="button" aria-expanded="false" aria-controls="nav-menu"
+          aria-label="open or close main navigation">menu</button>
+      </div>
+    </div>
+    <nav role="navigation" aria-label="main navigation">
+      <ul id="nav-menu" class="base-navbar base-font--black">
+        <li class="base-navitem"><a class="base-navlink" href="#" aria-current="page">Styles</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Components</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="base-main-wrapper">
+      <div class="base-width-container">
+        <div tabindex="0" class="base-notification base-notification--error" aria-labelledby="notification-title">
+          <div class="base-notification__message" >
+            <h2 class="base-heading-h2" id="notification-title">There's a problem</h2>
+
+            <ul class="base-list base-list--bullet">
+              <li><a class="base-link base-link--textcolor" href="#">Select yes if you legend bold default</a></li>
+              <li>Enter your first name</li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- <div class="base-grid-row">
+
+          <div class="base-grid-column--one-quarter">
+            <nav aria-labelledby="page-contents">
+              <h2 class="base-heading-h4" id="page-contents">Contents</h2>
+              <ul class="base-list base-list--bullet">
+                <li><a class="base-link" href="#colour-palette">Colour palette</a></li>
+                <li><a class="base-link" href="#headings">Headings</a></li>
+                <li><a class="base-link" href="#links">Links</a></li>
+              </ul>
+            </nav>
+          </div> -->
+
+
+
+
+        <!--  <h2 class="base-heading-h2" id="colour-palette" tabindex="-1">Button</h2>
+            <div class="base-code-block base-border--gray">
+              <div class="base-code-block--box base-border--bottom">
+                <p class="base-body-small"><a class="base-link" href="#">View example in new tab</a></p>
+              </div>
+
+              <iframe title="button example" src="./button-example.html" frameborder="0" loading="lazy"></iframe>
+              <div class="base-code-block--box base-border--top">
+                <pre class="base-code-block--area"><code>
+  <span style="color:#0046c9">&#60;legend</span> <span style="color:#027900">class</span>=<span style="color:#cb0003">&#34;base-fieldset__legend base-fieldset__legend--h3&#34;</span><span style="color:#0046c9">&#62;</span>Classes<span style="color:#0046c9">&#60;/legend</span><span style="color:#0046c9">&#62;</span>
+  <span style="color:#0046c9">&#60;div</span> <span style="color:#027900">class</span>=<span style="color:#cb0003">&#34;base-form-group&#34;</span><span style="color:#0046c9">&#62;</span>
+      <span style="color:#0046c9">&#60;label</span> <span style="color:#027900">class</span>=<span style="color:#cb0003">&#34;base-label&#34;</span> <span style="color:#027900">for</span>=<span style="color:#cb0003">&#34;tag-class&#34;</span><span style="color:#0046c9">&#62;</span>
+          tag class
+      <span style="color:#0046c9">&#60;/label</span><span style="color:#0046c9">&#62;</span>
+
+      <span style="color:#0046c9">&#60;input</span> <span style="color:#027900">class</span>=<span style="color:#cb0003">&#34;base-input&#34;</span> <span style="color:#027900">id</span>=<span style="color:#cb0003">&#34;tag-class&#34;</span> <span style="color:#027900">name</span>=<span style="color:#cb0003">&#34;tag-class&#34;</span> <span style="color:#027900">type</span>=<span style="color:#cb0003">&#34;text&#34;</span><span style="color:#0046c9">&#62;</span>
+  <span style="color:#0046c9">&#60;/div</span><span style="color:#0046c9">&#62;</span>
+</code></pre>
+
+              </div>
+            </div>
+            <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+              curae;
+              Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac
+              lorem.
+              Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros
+              eleifend,
+              bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p> -->
+        <h1 class="base-heading-h1">Form title</h1>
+        <!-- <div class="base-font--blue">
+        <svg  viewBox="0 0 230 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="error" fill="currentColor" viewBox="0 0 82.5 55" width="100%" height="4%" >
+              <polygon points="55 0 0 0 0 55 55 55 82.5 27.5 55 0"  />
+            </pattern>
+          </defs>
+
+          <rect x="0" y="0" height="100%" width="8px" fill="url(#error)"/>
+
+        </svg>
+      </div> -->
+        <div class="base-form-group">
+
+          <fieldset class="base-fieldset">
+            <legend class="base-fieldset__legend">Legend bold default</legend>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio1" name="looking-job" value="yes">
+              <label class=" base-radio__label base-label__width--one-half" for="radio1">Yes</label>
+            </div>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio2" name="looking-job" value="no">
+              <label class="base-radio__label base-label__width--one-half" for="radio2">No</label>
+            </div>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio3" name="looking-job" value="maybe">
+              <label class="base-radio__label base-label__width--one-half" for="radio3">Maybe</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="base-form-group base-form-group--error">
+          <fieldset class="base-fieldset">
+            <legend class="base-fieldset__legend">Legend bold default</legend>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio4" name="looking-job2" value="yes">
+              <label class=" base-radio__label base-label__width--one-half" for="radio4">Yes</label>
+            </div>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio5" name="looking-job2" value="no">
+              <label class="base-radio__label base-label__width--one-half" for="radio5">No</label>
+            </div>
+            <div class="base-radio__item">
+              <input class="base-radio__input" type="radio" id="radio6" name="looking-job2" value="maybe">
+              <label class="base-radio__label base-label__width--one-half" for="radio6">Maybe</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="base-form-group base-form-group--error">
+          <label class="base-label base-label--bold base-label__width--one-half" for="tag-class">
+            First name
+          </label>
+
+          <input class="base-input base-input__width--one-half" id="tag-class" name="tag-class" type="text">
+        </div>
+        <div class="base-form-group">
+          <label class="base-label base-label--bold base-label__width--one-half" for="tag-class">
+            Last name
+          </label>
+
+          <input class="base-input base-input__width--one-half" id="tag-class" name="tag-class" type="text">
+        </div>
+        <div class="base-form-group">
+          <label class="base-label base-label--bold base-label__width--one-quarter" for="tag-class">
+            Postcode
+          </label>
+
+          <input class="base-input base-input__width--one-quarter" id="tag-class" name="tag-class" type="text">
+        </div>
+        <!-- <div class="base-helptext">like the style</div> -->
+
+
+
+        <button class="base-button base-button--light-pink" onclick="window.location.href='./sidenav-end.html';">Save details</button>
+
+
+
+        <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          curae;
+          Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac
+          lorem.
+          Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros
+          eleifend,
+          bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p>
+
+
+        <h2 class="base-heading-h2">Headings</h2>
+        <div class="base-inset-text base-border--pink">
+          <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            curae;
+            Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis
+            ac
+            lorem.</p>
+        </div>
+        <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          curae;
+          Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac
+          lorem.
+          Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros
+          eleifend,
+          bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p>
+
+
+        <h2 class="base-heading-h2">Links</h2>
+
+      </div>
+
+    </div>
+
+
+  </main>
+  <footer class="base-footer">
+    <div class=" base-width-container">
+      <ul>
+        <li class="base-footer-navitem"><a class="base-link" href="http://www.david.com">Site map</a></li>
+        <li class="base-footer-navitem"><a class="base-link" href="#">Contact services</a></li>
+        <li class="base-footer-navitem"><a class="base-link" href="#">Department of information</a></li>
+
+      </ul>
+    </div>
+  </footer>
+  <script src="javascript/base-all.js"></script>
+  <script>
+    window.initAll();
+  </script>
+</body>
+
+</html>

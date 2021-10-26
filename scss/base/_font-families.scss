@@ -1,11 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 
 $base-font-family: Arial, sans-serif;
-$base-header-family: Arial, sans-serif;
+$base-header-family: $base-font-family;
 $conor-header-family: 'Archivo Black', Arial, sans-serif;
-$base-heading-family: Arial, sans-serif;
+$base-heading-family: $base-font-family;
 $base-font-weight-regular: 400 !default; 
-$base-font-weight-bold: 700 !default; 
+$base-font-weight-bold: 700 !default;

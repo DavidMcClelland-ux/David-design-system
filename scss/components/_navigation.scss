@@ -9,7 +9,7 @@
   font-size: map-get($base-font-sizes, "text-sm");
   line-height: $base-line-height;
   font-weight: $base-font-weight-regular;
-  padding: 1.2rem 0;
+  padding: px-to-rem(12) 0;
   &:focus {
     @include focus-style;
   }
@@ -21,9 +21,9 @@
     border-color: transparent;
     -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    border-width: 1rem 0.8rem 0 0.8rem;
+    border-width: px-to-rem(10) px-to-rem(8) 0 px-to-rem(8);
     content: " ";
-    margin-left: 5px;
+    margin-left: px-to-rem(5);
     border-top-color: currentColor;
   }
   &[aria-expanded="true"]::after {
@@ -34,9 +34,9 @@
     border-color: transparent;
     -webkit-clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    border-width: 0 0.8rem 1rem 0.8rem;
+    border-width: 0 px-to-rem(8) px-to-rem(10) px-to-rem(8);
     content: " ";
-    margin-left: 5px;
+    margin-left: px-to-rem(5);
     border-bottom-color: currentColor;
   }
   @include md {
@@ -53,12 +53,12 @@
   max-width: 1016px;
 
   @include md {
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
+    margin-left: px-to-rem(32);
+    margin-right: px-to-rem(32);
   }
   @include lg {
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
+    margin-left: px-to-rem(32);
+    margin-right: px-to-rem(32);
   }
   @include xl {
     margin-left: auto;
@@ -74,7 +74,7 @@
   margin: 0;
   display: block;
   border-bottom: 1px solid map-get($base-colours, "gray");
-  padding: 0rem 1.5rem;
+  padding: 0 px-to-rem(15);
   &:last-child {
     border-bottom: 0;
   }
@@ -94,13 +94,13 @@
   font-size: map-get($base-font-sizes, "text-sm");
   line-height: $base-line-height;
   font-weight: $base-font-weight-regular;
-  padding: 1.1rem 0.1rem;
+  padding: px-to-rem(11) px-to-rem(1);
   display: block;
-  margin: 0.3rem 0;
+  margin: px-to-rem(3) 0;
   @include md {
-    padding: 1.5rem 0.8rem;
+    padding: px-to-rem(15) px-to-rem(8);
     font-size: map-get($base-font-sizes, "text");
-    margin-right: 0.3rem;
+    margin-right: px-to-rem(3);
   }
   &:link {
     color: inherit;
@@ -117,13 +117,13 @@
   }
   &[aria-current="page"] {
     color: inherit;
-    border-bottom: 0.4rem solid map-get($base-colours, "black");
-    padding-bottom: 0.7rem;
+    border-bottom: px-to-rem(4) solid map-get($base-colours, "black");
+    padding-bottom: px-to-rem(7);
     font-weight: $base-font-weight-bold;
-    box-shadow: 0 0.3rem 0 0 map-get($base-colours, "black");
+    box-shadow: 0 px-to-rem(3) 0 0 map-get($base-colours, "black");
     @include md {
-      border-bottom-width: 0.4rem;
-      padding-bottom: 1.1rem;
+      border-bottom-width: px-to-rem(4);
+      padding-bottom: px-to-rem(11);
     }
     &:hover {
       color: inherit;

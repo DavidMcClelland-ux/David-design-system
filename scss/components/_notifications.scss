@@ -1,0 +1,48 @@
+.base-notification {
+    display: block;
+    border-width: 0 0 0 px-to-rem(15);
+    border-style: solid;
+    border-left-color: map-get($base-colours, 'black');
+    margin-bottom: map-get($base-spacing, '7');
+    @include md {
+        border-width: 0 0 0 px-to-rem(18);
+        margin-bottom: map-get($base-spacing, '9');
+    }
+    &:focus {
+        @include focus-style;
+    }
+    
+}
+
+.base-notification__message {
+    background-color: map-get($base-colours, 'white');
+    border: 1px solid transparent;
+    border-left-width: 0;
+    padding:map-get($base-spacing, '5');
+    @include md {
+        padding:map-get($base-spacing, '6');
+    }
+    :last-child {
+        margin-bottom: map-get($base-spacing, '1');
+        @include md {
+            margin-bottom: map-get($base-spacing, '3');
+        }
+    }
+}
+
+.base-notification--success {
+    border-left-color: map-get($base-colours, 'dark-teal');
+    .base-notification__message {
+        background-color: map-get($base-colours, 'light-teal');
+    }
+    
+}
+
+.base-notification--error {
+    border-left-color: map-get($base-colours, 'dark-pink');
+    border-style: double;
+    .base-notification__message {
+        background-color: map-get($base-colours, 'light-pink');
+    }
+    
+}

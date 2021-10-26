@@ -1,0 +1,36 @@
+.base-input {
+    font-family: $base-font-family;
+    font-size: map-get($base-font-sizes, 'text-sm');
+    line-height: $base-line-height;
+    font-weight: $base-font-weight-regular;
+    color: $base-font-colour;
+    box-sizing: border-box;
+    width: 100%;
+    height: map-get($base-spacing , '9' );
+    margin-top: 0;
+    padding:map-get($base-spacing , '3' );
+    border:2px solid map-get($base-colours, 'black');
+    border-radius: 0;
+    // Disable inner shadow and remove rounded corners
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    
+            @include md {
+                font-size: map-get($base-font-sizes, 'text');
+              }
+    
+            &:focus {
+                @include focus-style;
+            }
+}
+
+//widths based on screen size
+@each $name, $value in $base-grid-widths {
+  .base-input__width--#{$name} {
+    width:100%;
+    @include md { 
+      width: $value;
+    }
+  }   
+}

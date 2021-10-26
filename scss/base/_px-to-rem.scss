@@ -1,0 +1,7 @@
+// root font size is the default font size used by browsers
+$root-font-size : 16;
+
+@function px-to-rem($pixelValue){
+    $result: ($pixelValue / $root-font-size) * 1rem;
+    @return $result;
+}

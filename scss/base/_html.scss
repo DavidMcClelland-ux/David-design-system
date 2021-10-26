@@ -1,9 +1,8 @@
 
 .base-html {
-    // set font size of webpage so we can use rems
-    // assume device default font size is 16px
-    // to get 10px default font size is 62.5% of 16px = 10px
-    font-size: 62.5%;
+    // set to 100% to avoid chrome picking up error
+    // use px to rem function to size elements correctly
+    font-size: 100%;
 
     // Prevent automatic text sizing, as we already cater for small devices and
     // would like the browser to stay on 100% text zoom by default.

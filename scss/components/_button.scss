@@ -4,11 +4,11 @@
   line-height: $base-line-height;
   font-weight: $base-font-weight-bold;
   color: $base-font-colour;
-  padding: 1rem 1.4rem;
+  padding: px-to-rem(10) px-to-rem(14);
   border: 2px solid $base-font-colour;
   border-radius: 0;
   background-color: map-get($base-colours, "white");
-  box-shadow: 0 0 0 0.1rem map-get($base-colours, "white");
+  box-shadow: 0 0 0 px-to-rem(1) map-get($base-colours, "white");
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -25,7 +25,7 @@
     color: map-get($base-colours, "white");
   }
   &:active {
-    top: 0.2rem;
+    top: px-to-rem(2);
   }
 }
 

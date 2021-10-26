@@ -8,7 +8,7 @@ $base-font-underline: true;
 
   @if ($base-font-underline) {
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.1rem;
+    text-underline-offset: px-to-rem(1);
   }
 }
 

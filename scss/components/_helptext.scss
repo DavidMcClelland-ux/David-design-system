@@ -1,0 +1,12 @@
+.base-helptext{
+    font-family: $base-font-family;
+    font-size: map-get($base-font-sizes, 'text-sm');
+    line-height: $base-line-height;
+    font-weight: $base-font-weight-regular;
+    color: $base-font-colour;
+    display: block;
+    margin-bottom: map-get($base-spacing , '1');
+    @include md {
+        font-size: map-get($base-font-sizes, 'text');
+      }
+}
