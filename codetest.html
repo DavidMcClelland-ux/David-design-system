@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en" class="base-html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>test page | scss - setup</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="base-bg--white">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+  </script>
+
+  <header role="banner">
+    <div class="base-header">
+      <div class=" base-width-container base-header-flex">
+        <div class="base-header-logo">david design system</div>
+        <button id="menu-toggle" class="base-navbutton" type="button" aria-expanded="false" aria-controls="nav-menu"
+          aria-describedby="nav-menu">menu</button>
+      </div>
+    </div>
+    <nav id="nav-menu" role="navigation" aria-label="main navigation">
+      <ul class="base-navbar">
+        <li class="base-navitem"><a class="base-navlink" href="#" aria-current="page">Styles</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Contact services</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Department of information</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Documents</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Services</a></li>
+        <li class="base-navitem"><a class="base-navlink" href="#">Recent updates and news</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="base-main-wrapper">
+      <div class="base-width-container">
+        <h1 class="base-heading-h1">Code snippet example</h1>
+        <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac lorem.
+          Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros eleifend,
+          bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p>
+        <figure class="base-code-block">
+          <figcaption>HTML code example</figcaption>
+          <div class="base-code-block--code  base-bg--light-teal">
+            
+            <code><span class="david">&#60;button</span> <span class="das">class</span>=&#34;hello<span class="david">&#62;</span>
+  Save and continue
+<span class="david">&#60;/button</span><span class="david">&#62;</span>
+</code>
+          </div>
+          <div class="base-code-block--actions">
+            <button class="base-button">Copy code</button>
+          </div>
+
+        </figure>
+        <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac lorem.
+          Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros eleifend,
+          bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p>
+          <figure class="base-code-block">
+            <figcaption>Figcaption this is a really long heading that really shouldn't be this long. But as it happens we need to consider hwo it works</figcaption>
+            <div class="base-code-block--code">
+              <code><span class="1">&#60;figure</span> <span class="2">class</span>=<span class="3">&#34;base-code-block&#34;</span><span class="1">&#62;</span>
+  <span class="1">&#60;figcaption</span><span class="1">&#62;</span>HTML code example<span class="1">&#60;/figcaption</span><span class="1">&#62;</span>
+  <span class="1">&#60;div</span> <span class="2">class</span>=<span class="3">&#34;base-code-block--code  base-bg--light-teal&#34;</span><span class="1">&#62;</span>
+    <span class="1">&#60;code</span><span class="1">&#62;</span><span class="1">&#60;span</span> <span class="2">class</span>=<span class="3">&#34;david&#34;</span><span class="1">&#62;</span><button<span class="1">&#60;/span</span><span class="1">&#62;</span> <span class="1">&#60;span</span> <span class="2">class</span>=<span class="3">&#34;das&#34;</span><span class="1">&#62;</span>class<span class="1">&#60;/span</span><span class="1">&#62;</span>&#61;"hello<span class="1">&#60;span</span> <span class="2">class</span>=<span class="3">&#34;david&#34;</span><span class="1">&#62;</span>><span class="1">&#60;/span</span><span class="1">&#62;</span>
+    Save and continue
+  <span class="1">&#60;span</span> <span class="2">class</span>=<span class="3">&#34;david&#34;</span><span class="1">&#62;</span></button<span class="1">&#60;/span</span><span class="1">&#62;</span><span class="1">&#60;span</span> <span class="2">class</span>=<span class="3">&#34;david&#34;</span><span class="1">&#62;</span>><span class="1">&#60;/span</span><span class="1">&#62;</span>
+  <span class="1">&#60;/code</span><span class="1">&#62;</span>
+  <span class="1">&#60;/div</span><span class="1">&#62;</span>
+  <span class="1">&#60;div</span> <span class="2">class</span>=<span class="3">&#34;base-code-block--actions&#34;</span><span class="1">&#62;</span>
+  <span class="1">&#60;button</span> <span class="2">class</span>=<span class="3">&#34;base-button&#34;</span><span class="1">&#62;</span>Copy code<span class="1">&#60;/button</span><span class="1">&#62;</span><span class="1">&#60;button</span> <span class="2">class</span>=<span class="3">&#34;base-button&#34;</span><span class="1">&#62;</span>Create a new application<span class="1">&#60;/button</span><span class="1">&#62;</span><span class="1">&#60;button</span> <span class="2">class</span>=<span class="3">&#34;base-button&#34;</span><span class="1">&#62;</span>Create a new application<span class="1">&#60;/button</span><span class="1">&#62;</span>
+  <span class="1">&#60;/div</span><span class="1">&#62;</span>
+<span class="1">&#60;/figure</span><span class="1">&#62;</span>
+</code>
+            </div>
+            <div class="base-code-block--actions">
+              <button class="base-button">Copy code</button><button class="base-button">Make another application</button>
+            </div>
+          </figure>
+          <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis ac lorem.
+            Etiam nulla magna, consequat tincidunt convallis vitae, mollis eu ante. Suspendisse maximus eros eleifend,
+            bibendum nunc finibus, bibendum mi. Nam pretium justo diam, vel porttitor risus maximus ac.</p>
+        
+      </div>
+
+    </div>
+
+  </main>
+  <footer class="base-footer">
+    <div class=" base-width-container">
+      <ul>
+        <li class="base-footer-navitem"><a class="base-link" href="http://www.david.com">Site map</a></li>
+        <li class="base-footer-navitem"><a class="base-link" href="#">Contact services</a></li>
+        <li class="base-footer-navitem"><a class="base-link" href="#">Department of information</a></li>
+
+      </ul>
+    </div>
+  </footer>
+  <script src="javascript/base-all.js"></script>
+  <script>
+    window.initAll();
+  </script>
+</body>
+
+</html>

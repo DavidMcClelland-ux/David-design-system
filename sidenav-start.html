@@ -12,20 +12,20 @@
   <link rel="stylesheet" href="css/all.min.css">
 </head>
 
-<body class="base-bg--off-white">
+<body class="base-bg--white">
   <script>
     document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
   </script>
-  <header role="banner">
-    <div class="base-header ">
+  <header role="banner" class="base-font--dark-pink">
+    <div class="base-header base-bg--white ">
       <div class=" base-width-container base-header-flex">
         <div class="base-header-logo">david design system</div>
-        <button class="base-navbutton" type="button" aria-expanded="false" aria-controls="nav-menu"
-          aria-label="open or close main navigation">menu</button>
+        <button id="menu-toggle" class="base-navbutton" type="button" aria-expanded="false" aria-controls="nav-menu"
+          aria-describedby="nav-menu">menu</button>
       </div>
     </div>
-    <nav role="navigation" aria-label="main navigation">
-      <ul id="nav-menu" class="base-navbar base-font--black">
+    <nav id="nav-menu" role="navigation" aria-label="main navigation">
+      <ul  class="base-navbar base-font--black">
         <li class="base-navitem"><a class="base-navlink" href="#" aria-current="page">Styles</a></li>
         <li class="base-navitem"><a class="base-navlink" href="#">Components</a></li>
       </ul>
@@ -108,17 +108,17 @@
 
           <fieldset class="base-fieldset">
             <legend class="base-fieldset__legend ">Legend bold default</legend>
-            <div class="base-radio__item">
-              <input class="base-radio__input" type="radio" id="radio1" name="looking-job" value="yes">
-              <label class=" base-radio__label base-label__width--one-half" for="radio1">Yes</label>
+            <div class="base-checkbox__item">
+              <input class="base-checkbox__input" type="checkbox" id="check11" name="looking-job" value="yes">
+              <label class=" base-checkbox__label base-label__width--one-half" for="check11">Yes</label>
             </div>
-            <div class="base-radio__item">
-              <input class="base-radio__input" type="radio" id="radio2" name="looking-job" value="no">
-              <label class="base-radio__label base-label__width--one-half" for="radio2">No</label>
+            <div class="base-checkbox__item">
+              <input class="base-checkbox__input" type="checkbox" id="check12" name="looking-job" value="yes">
+              <label class=" base-checkbox__label base-label__width--one-half" for="check12">No</label>
             </div>
-            <div class="base-radio__item">
-              <input class="base-radio__input" type="radio" id="radio3" name="looking-job" value="maybe">
-              <label class="base-radio__label base-label__width--one-half" for="radio3">Maybe</label>
+            <div class="base-checkbox__item">
+              <input class="base-checkbox__input" type="checkbox" id="check13" name="looking-job" value="yes">
+              <label class=" base-checkbox__label base-label__width--one-half" for="check13">Not sure</label>
             </div>
           </fieldset>
         </div>
@@ -165,7 +165,7 @@
 
 
 
-        <button class="base-button base-button--light-pink" onclick="window.location.href='./sidenav.html';">Save details</button>
+        <button class="base-button base-button--light-teal" onclick="window.location.href='./sidenav.html';">Save details</button>
 
 
 
@@ -179,7 +179,7 @@
 
 
         <h2 class="base-heading-h2">Headings</h2>
-        <div class="base-inset-text base-border--pink">
+        <div class="base-inset-text base-border--gray">
           <p class="base-body">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
             curae;
             Vestibulum in dolor ut orci facilisis fermentum. Integer quis quam at massa sollicitudin semper quis

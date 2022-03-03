@@ -1,0 +1,90 @@
+$base-radiosmall-size: px-to-rem(44);
+$base-radiosmall-endsize: px-to-rem(34);
+$base-radiosmall-borderwidth: px-to-rem(2);
+$base-radiosmall-dotsize: px-to-rem(18);
+$base-radiosmall-dotborder: px-to-rem(9);
+$base-radiosmall-dotspacing: ($base-radiosmall-endsize - $base-radiosmall-dotsize) / 2;
+$base-radiosmall-padding-top: ($base-radiosmall-size - $base-radiosmall-endsize) /2;
+$base-radio-label-fontsize: map-get($base-font-sizes, "text");
+$base-radio-label-fontsize-mobile: map-get($base-font-sizes, "text-sm");
+$base-radiosmall-label-padding-top: ($base-radiosmall-size - ($base-line-height * $base-radio-label-fontsize)) / 2;
+$base-radiosmall-label-padding-top-mobile: ($base-radiosmall-size - ($base-line-height * $base-radio-label-fontsize-mobile)) /
+    2;
+
+.base-radio-small__item {
+    display: block;
+    position: relative;
+    margin-bottom: map-get($base-spacing, "1");
+    @include md {
+        margin-bottom: map-get($base-spacing, "1");
+    }
+    &:last-of-type {
+        margin-bottom:0;
+    }
+}
+
+.base-radio-small__label {
+    display: block;
+    margin-bottom: 0;
+    cursor: pointer;
+    padding-top: $base-radiosmall-label-padding-top-mobile;
+    padding-left: $base-radiosmall-size + px-to-rem(3);
+    min-height: $base-radiosmall-size;
+    font-family: $base-font-family;
+    font-size: $base-radio-label-fontsize-mobile;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight-regular;
+    color: $base-font-colour;
+    @include md {
+        font-size: $base-radio-label-fontsize;
+        padding-top: $base-radiosmall-label-padding-top;
+    }
+    // remove 300ms pause on mobile
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+//radio ring
+.base-radio-small__label:before {
+    content: "";
+    position: absolute;
+    top: $base-radiosmall-padding-top;
+    left: 0;
+    width: $base-radiosmall-endsize;
+    height: $base-radiosmall-endsize;
+    border: $base-radiosmall-borderwidth solid currentColor;
+    border-radius: 50%;
+}
+
+// radio dot when checked
+.base-radio-small__label:after {
+    content: "";
+    position: absolute;
+    top: $base-radiosmall-dotspacing + $base-radiosmall-padding-top;
+    left: $base-radiosmall-dotspacing;
+    width: 0;
+    height: 0;
+    border: $base-radiosmall-dotborder solid currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    background-color: currentColor;
+}
+
+// hide browser default radio component
+.base-radio-small__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    width: $base-radiosmall-size;
+    height: $base-radiosmall-size;
+}
+
+.base-radio-small__input:checked + .base-radio-small__label:after {
+    opacity: 1;
+}
+
+.base-radio-small__input:focus + .base-radio-small__label {
+    @include focus-style;
+}
