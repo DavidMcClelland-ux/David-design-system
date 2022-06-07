@@ -22,6 +22,9 @@ $base-font-underline: true;
 }
 
 .base-link {
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight-regular;
   cursor: pointer;
   color: $base-link-colour;
   @include base-link-decoration;

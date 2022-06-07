@@ -27,7 +27,7 @@ code {
     height: auto;
     padding: 0;
     margin-bottom: map-get($base-spacing, "6");
-    background-color: map-get($base-colours, "white");
+    background-color: inherit;
     @include md {
         margin-bottom: map-get($base-spacing, "8");
     }
@@ -69,9 +69,6 @@ resize:vertical;
     padding-left: map-get($base-spacing, "5");
     padding-right: map-get($base-spacing, "5");
     padding-bottom: map-get($base-spacing, "3");
-    .base-button {
-        margin-bottom: map-get($base-spacing, "3");
-    }
 }
 
 .base-code--tag {

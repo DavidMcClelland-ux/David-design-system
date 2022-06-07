@@ -3,6 +3,7 @@
   font-size: map-get($base-font-sizes, "text");
   line-height: $base-line-height;
   font-weight: $base-font-weight-bold;
+  text-align: left;
   color: $base-font-colour;
   padding: px-to-rem(10) px-to-rem(14);
   border: 2px solid $base-font-colour;
@@ -34,6 +35,15 @@
   margin-bottom: map-get($base-spacing, "4");
   .base-button {
     margin-bottom: map-get($base-spacing, "3");
+  }
+  .base-link {
+    font-size: map-get($base-font-sizes, "text"); 
+    display:inline-block;
+    margin-top: map-get($base-spacing, "1");
+    margin-left: 0;
+    margin-right: map-get($base-spacing, "3");
+    margin-bottom: map-get($base-spacing, "3");
+    text-align: left;
   }
 }
 
