@@ -1,4 +1,4 @@
-$base-radiosmall-size: px-to-rem(44);
+$base-radiosmall-size: px-to-rem(34);
 $base-radiosmall-endsize: px-to-rem(34);
 $base-radiosmall-borderwidth: px-to-rem(2);
 $base-radiosmall-dotsize: px-to-rem(18);
@@ -14,9 +14,9 @@ $base-radiosmall-label-padding-top-mobile: ($base-radiosmall-size - ($base-line-
 .base-radio-small__item {
     display: block;
     position: relative;
-    margin-bottom: map-get($base-spacing, "1");
+    margin-bottom: map-get($base-spacing, "3");
     @include md {
-        margin-bottom: map-get($base-spacing, "1");
+        margin-bottom: map-get($base-spacing, "3");
     }
     &:last-of-type {
         margin-bottom:0;
@@ -28,7 +28,7 @@ $base-radiosmall-label-padding-top-mobile: ($base-radiosmall-size - ($base-line-
     margin-bottom: 0;
     cursor: pointer;
     padding-top: $base-radiosmall-label-padding-top-mobile;
-    padding-left: $base-radiosmall-size + px-to-rem(3);
+    padding-left: $base-radiosmall-size + px-to-rem(13);
     min-height: $base-radiosmall-size;
     font-family: $base-font-family;
     font-size: $base-radio-label-fontsize-mobile;

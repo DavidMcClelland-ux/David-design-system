@@ -1,0 +1,88 @@
+$base-checkbox-small-endsize: px-to-rem(34);
+$base-checkbox-small-borderwidth: px-to-rem(2);
+$base-checkbox-small-label-fontsize: map-get($base-font-sizes, "text");
+$base-checkbox-small-label-fontsize-mobile: map-get($base-font-sizes, "text-sm");
+$base-checkbox-small-label-padding-top: ($base-checkbox-small-endsize - ($base-line-height * $base-checkbox-small-label-fontsize)) / 2;
+$base-checkbox-small-label-padding-top-mobile: ($base-checkbox-small-endsize - ($base-line-height * $base-checkbox-small-label-fontsize-mobile)) /
+    2;
+
+.base-checkbox-small__item {
+    display: block;
+    position: relative;
+    margin-bottom: map-get($base-spacing, "3");
+    @include md {
+        margin-bottom: map-get($base-spacing, "3");
+    }
+    &:last-of-type {
+        margin-bottom:0;
+    }
+}
+
+.base-checkbox-small__label {
+    display: block;
+    margin-bottom: 0;
+    cursor: pointer;
+    padding-top: $base-checkbox-small-label-padding-top-mobile;
+    padding-left: $base-checkbox-small-endsize + px-to-rem(13);
+    min-height: $base-checkbox-small-endsize;
+    font-family: $base-font-family;
+    font-size: $base-checkbox-small-label-fontsize-mobile;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight-regular;
+    color: $base-font-colour;
+    @include md {
+        font-size: $base-checkbox-small-label-fontsize;
+        padding-top: $base-checkbox-small-label-padding-top;
+    }
+    // remove 300ms pause on mobile
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+//checkbox outer border
+.base-checkbox-small__label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $base-checkbox-small-endsize;
+    height: $base-checkbox-small-endsize;
+    border: $base-checkbox-small-borderwidth solid currentColor;
+}
+
+// checkbox tick when checked
+.base-checkbox-small__label:after {
+    content: "";
+    position: absolute;
+    top: px-to-rem(10);
+    left: px-to-rem(8);
+    width: px-to-rem(19);
+    height: px-to-rem(10);
+    border: solid currentColor;
+    border-width: 0 0 4px 4px;
+    opacity: 0;
+    background-color: transparent;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-top-color:transparent;
+}
+
+// hide browser default radio component
+.base-checkbox-small__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    width: $base-checkbox-small-endsize;
+    height: $base-checkbox-small-endsize;
+}
+
+.base-checkbox-small__input:checked + .base-checkbox-small__label:after {
+    opacity: 1;
+}
+
+.base-checkbox-small__input:focus + .base-checkbox-small__label {
+    @include focus-style;
+}
