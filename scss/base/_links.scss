@@ -59,4 +59,9 @@ $base-font-underline: true;
   &:visited {
     color: inherit !important;
   }
+  &:focus {
+    @include focus-style;
+    background-color: map-get($base-colours, "white");
+    color: map-get($base-colours, "black") !important;
+  }
 }
