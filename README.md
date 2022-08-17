@@ -1,2 +1,2 @@
-# Sass-setup
-A Sass setup template for HTML projects that use Sass
+# David design system
+An open source design system created for david creative websites by David McClelland.
