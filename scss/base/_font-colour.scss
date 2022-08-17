@@ -1,15 +1,15 @@
 /* colouring selector to colour type by class */
 
-@each $name, $value in $base-colours {
-  .base-font--#{$name} {
+@each $name, $value in $david-colours {
+  .david-font--#{$name} {
     color: $value !important;
   }   
 }
 
 /* default colours variables for text */
-$base-font-colour: map-get($base-colours, 'black');
-$base-heading-colour: map-get($base-colours, 'black');
-$base-link-colour: map-get($base-link-colours, 'blue');
-$base-link-colour--hover: map-get($base-link-colours, 'dark-blue');
-$base-link-colour--visited: map-get($base-link-colours, 'purple');
+$david-font-colour: map-get($david-colours, 'black');
+$david-heading-colour: map-get($david-colours, 'black');
+$david-link-colour: map-get($david-link-colours, 'blue');
+$david-link-colour--hover: map-get($david-link-colours, 'dark-blue');
+$david-link-colour--visited: map-get($david-link-colours, 'purple');
 

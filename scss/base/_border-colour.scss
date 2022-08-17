@@ -1,5 +1,5 @@
-@each $name, $value in $base-colours {
-    .base-border--#{$name} {
+@each $name, $value in $david-colours {
+    .david-border--#{$name} {
       border-color: $value !important;
     }   
 }

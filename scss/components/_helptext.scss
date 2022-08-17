@@ -1,12 +1,12 @@
-.base-helptext{
-    font-family: $base-font-family;
-    font-size: map-get($base-font-sizes, 'text-sm');
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-regular;
-    color: $base-font-colour;
+.david-helptext{
+    font-family: $david-font-family;
+    font-size: map-get($david-font-sizes, 'text-sm');
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-regular;
+    color: $david-font-colour;
     display: block;
-    margin-bottom: map-get($base-spacing , '1');
+    margin-bottom: map-get($david-spacing , '1');
     @include md {
-        font-size: map-get($base-font-sizes, 'text');
+        font-size: map-get($david-font-sizes, 'text');
       }
 }

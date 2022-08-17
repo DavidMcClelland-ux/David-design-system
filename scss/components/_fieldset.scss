@@ -1,52 +1,52 @@
-.base-fieldset{
+.david-fieldset{
     display:block;
     margin:0;
     padding:0;
     border:0;
 }
 
-.base-fieldset__legend {
-    font-family: $base-font-family;
-    font-size: map-get($base-font-sizes, 'text-sm');
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-bold;
-    color: $base-font-colour;
+.david-fieldset__legend {
+    font-family: $david-font-family;
+    font-size: map-get($david-font-sizes, 'text-sm');
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-bold;
+    color: $david-font-colour;
     display: block;
-    margin-bottom: map-get($base-spacing , '3'); 
+    margin-bottom: map-get($david-spacing , '3'); 
     @include md {
-        font-size: map-get($base-font-sizes, 'text');
+        font-size: map-get($david-font-sizes, 'text');
       }
 }
 
-.base-fieldset__legend--h1 {
-    font-size: map-get($base-font-sizes, 'h1-sm');
+.david-fieldset__legend--h1 {
+    font-size: map-get($david-font-sizes, 'h1-sm');
     @include md {
-      font-size: map-get($base-font-sizes, 'h1');
+      font-size: map-get($david-font-sizes, 'h1');
     }
   } 
   
-  .base-fieldset__legend--h2 {
-    font-size: map-get($base-font-sizes, 'h2-sm');
+  .david-fieldset__legend--h2 {
+    font-size: map-get($david-font-sizes, 'h2-sm');
       @include md {
-      font-size: map-get($base-font-sizes, 'h2');
+      font-size: map-get($david-font-sizes, 'h2');
     }
   }
   
-  .base-fieldset__legend--h3 {
-    font-size: map-get($base-font-sizes, 'h3-sm');
+  .david-fieldset__legend--h3 {
+    font-size: map-get($david-font-sizes, 'h3-sm');
       @include md {
-      font-size: map-get($base-font-sizes, 'h3');
+      font-size: map-get($david-font-sizes, 'h3');
     }
   }
   
-  .base-fieldset__legend--h4 {
-    font-size: map-get($base-font-sizes, 'h4-sm');
+  .david-fieldset__legend--h4 {
+    font-size: map-get($david-font-sizes, 'h4-sm');
       @include md {
-      font-size: map-get($base-font-sizes, 'h4');
+      font-size: map-get($david-font-sizes, 'h4');
     }
   }
 
-  .base-fieldset__heading {
+  .david-fieldset__heading {
       margin:0;
       font-size: inherit;
       font-weight: inherit;

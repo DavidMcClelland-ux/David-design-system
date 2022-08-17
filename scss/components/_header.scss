@@ -1,9 +1,9 @@
-.base-header {
+.david-header {
     background-color: inherit;
-    border-bottom: 1px solid map-get($base-colours, 'black');    
+    border-bottom: 1px solid map-get($david-colours, 'black');    
 }
 
-.base-header-flex {
+.david-header-flex {
   display: flex;
   flex-flow: row wrap; 
   justify-content: space-between;
@@ -12,18 +12,18 @@
   } 
 }
 
-.base-header-logo {
-  font-family: $base-header-family;
-  font-size: map-get($base-font-sizes, 'header-logo-sm');
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-bold;
+.david-header-logo {
+  font-family: $david-header-family;
+  font-size: map-get($david-font-sizes, 'header-logo-sm');
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-bold;
   color: inherit;
   display: inline-block;
-  padding: map-get($base-spacing, '4') 0; 
+  padding: map-get($david-spacing, '4') 0; 
   max-width: 70vw;
   @include md {
-    font-size: map-get($base-font-sizes, 'header-logo');
-    padding: map-get($base-spacing, '5') 0; 
+    font-size: map-get($david-font-sizes, 'header-logo');
+    padding: map-get($david-spacing, '5') 0; 
     max-width: 100vw;
   }
 }

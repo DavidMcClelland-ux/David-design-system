@@ -1,43 +1,43 @@
-$base-radiosmall-size: px-to-rem(34);
-$base-radiosmall-endsize: px-to-rem(34);
-$base-radiosmall-borderwidth: px-to-rem(2);
-$base-radiosmall-dotsize: px-to-rem(18);
-$base-radiosmall-dotborder: px-to-rem(9);
-$base-radiosmall-dotspacing: ($base-radiosmall-endsize - $base-radiosmall-dotsize) / 2;
-$base-radiosmall-padding-top: ($base-radiosmall-size - $base-radiosmall-endsize) /2;
-$base-radio-label-fontsize: map-get($base-font-sizes, "text");
-$base-radio-label-fontsize-mobile: map-get($base-font-sizes, "text-sm");
-$base-radiosmall-label-padding-top: ($base-radiosmall-size - ($base-line-height * $base-radio-label-fontsize)) / 2;
-$base-radiosmall-label-padding-top-mobile: ($base-radiosmall-size - ($base-line-height * $base-radio-label-fontsize-mobile)) /
+$david-radiosmall-size: px-to-rem(34);
+$david-radiosmall-endsize: px-to-rem(34);
+$david-radiosmall-borderwidth: px-to-rem(2);
+$david-radiosmall-dotsize: px-to-rem(18);
+$david-radiosmall-dotborder: px-to-rem(9);
+$david-radiosmall-dotspacing: ($david-radiosmall-endsize - $david-radiosmall-dotsize) / 2;
+$david-radiosmall-padding-top: ($david-radiosmall-size - $david-radiosmall-endsize) /2;
+$david-radio-label-fontsize: map-get($david-font-sizes, "text");
+$david-radio-label-fontsize-mobile: map-get($david-font-sizes, "text-sm");
+$david-radiosmall-label-padding-top: ($david-radiosmall-size - ($david-line-height * $david-radio-label-fontsize)) / 2;
+$david-radiosmall-label-padding-top-mobile: ($david-radiosmall-size - ($david-line-height * $david-radio-label-fontsize-mobile)) /
     2;
 
-.base-radio-small__item {
+.david-radio-small__item {
     display: block;
     position: relative;
-    margin-bottom: map-get($base-spacing, "3");
+    margin-bottom: map-get($david-spacing, "3");
     @include md {
-        margin-bottom: map-get($base-spacing, "3");
+        margin-bottom: map-get($david-spacing, "3");
     }
     &:last-of-type {
         margin-bottom:0;
     }
 }
 
-.base-radio-small__label {
+.david-radio-small__label {
     display: block;
     margin-bottom: 0;
     cursor: pointer;
-    padding-top: $base-radiosmall-label-padding-top-mobile;
-    padding-left: $base-radiosmall-size + px-to-rem(13);
-    min-height: $base-radiosmall-size;
-    font-family: $base-font-family;
-    font-size: $base-radio-label-fontsize-mobile;
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-regular;
-    color: $base-font-colour;
+    padding-top: $david-radiosmall-label-padding-top-mobile;
+    padding-left: $david-radiosmall-size + px-to-rem(13);
+    min-height: $david-radiosmall-size;
+    font-family: $david-font-family;
+    font-size: $david-radio-label-fontsize-mobile;
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-regular;
+    color: $david-font-colour;
     @include md {
-        font-size: $base-radio-label-fontsize;
-        padding-top: $base-radiosmall-label-padding-top;
+        font-size: $david-radio-label-fontsize;
+        padding-top: $david-radiosmall-label-padding-top;
     }
     // remove 300ms pause on mobile
     -ms-touch-action: manipulation;
@@ -45,46 +45,46 @@ $base-radiosmall-label-padding-top-mobile: ($base-radiosmall-size - ($base-line-
 }
 
 //radio ring
-.base-radio-small__label:before {
+.david-radio-small__label:before {
     content: "";
     position: absolute;
-    top: $base-radiosmall-padding-top;
+    top: $david-radiosmall-padding-top;
     left: 0;
-    width: $base-radiosmall-endsize;
-    height: $base-radiosmall-endsize;
-    border: $base-radiosmall-borderwidth solid currentColor;
+    width: $david-radiosmall-endsize;
+    height: $david-radiosmall-endsize;
+    border: $david-radiosmall-borderwidth solid currentColor;
     border-radius: 50%;
 }
 
 // radio dot when checked
-.base-radio-small__label:after {
+.david-radio-small__label:after {
     content: "";
     position: absolute;
-    top: $base-radiosmall-dotspacing + $base-radiosmall-padding-top;
-    left: $base-radiosmall-dotspacing;
+    top: $david-radiosmall-dotspacing + $david-radiosmall-padding-top;
+    left: $david-radiosmall-dotspacing;
     width: 0;
     height: 0;
-    border: $base-radiosmall-dotborder solid currentColor;
+    border: $david-radiosmall-dotborder solid currentColor;
     border-radius: 50%;
     opacity: 0;
     background-color: currentColor;
 }
 
 // hide browser default radio component
-.base-radio-small__input {
+.david-radio-small__input {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
     opacity: 0;
-    width: $base-radiosmall-size;
-    height: $base-radiosmall-size;
+    width: $david-radiosmall-size;
+    height: $david-radiosmall-size;
 }
 
-.base-radio-small__input:checked + .base-radio-small__label:after {
+.david-radio-small__input:checked + .david-radio-small__label:after {
     opacity: 1;
 }
 
-.base-radio-small__input:focus + .base-radio-small__label {
+.david-radio-small__input:focus + .david-radio-small__label {
     @include focus-style;
 }

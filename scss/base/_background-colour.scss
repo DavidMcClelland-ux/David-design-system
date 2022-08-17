@@ -1,6 +1,6 @@
 /*colour classes for changing the background colour of elements*/
-@each $name, $value in $base-colours {
-  .base-bg--#{$name} {
+@each $name, $value in $david-colours {
+  .david-bg--#{$name} {
     background-color: $value !important;
   }   
 }

@@ -1,38 +1,38 @@
-$base-checkbox-endsize: px-to-rem(44);
-$base-checkbox-borderwidth: px-to-rem(2);
-$base-checkbox-label-fontsize: map-get($base-font-sizes, "text");
-$base-checkbox-label-fontsize-mobile: map-get($base-font-sizes, "text-sm");
-$base-checkbox-label-padding-top: ($base-checkbox-endsize - ($base-line-height * $base-checkbox-label-fontsize)) / 2;
-$base-checkbox-label-padding-top-mobile: ($base-checkbox-endsize - ($base-line-height * $base-checkbox-label-fontsize-mobile)) /
+$david-checkbox-endsize: px-to-rem(44);
+$david-checkbox-borderwidth: px-to-rem(2);
+$david-checkbox-label-fontsize: map-get($david-font-sizes, "text");
+$david-checkbox-label-fontsize-mobile: map-get($david-font-sizes, "text-sm");
+$david-checkbox-label-padding-top: ($david-checkbox-endsize - ($david-line-height * $david-checkbox-label-fontsize)) / 2;
+$david-checkbox-label-padding-top-mobile: ($david-checkbox-endsize - ($david-line-height * $david-checkbox-label-fontsize-mobile)) /
     2;
 
-.base-checkbox__item {
+.david-checkbox__item {
     display: block;
     position: relative;
-    margin-bottom: map-get($base-spacing, "3");
+    margin-bottom: map-get($david-spacing, "3");
     @include md {
-        margin-bottom: map-get($base-spacing, "3");
+        margin-bottom: map-get($david-spacing, "3");
     }
     &:last-of-type {
         margin-bottom:0;
     }
 }
 
-.base-checkbox__label {
+.david-checkbox__label {
     display: block;
     margin-bottom: 0;
     cursor: pointer;
-    padding-top: $base-checkbox-label-padding-top-mobile;
-    padding-left: $base-checkbox-endsize + map-get($base-spacing, "4");
-    min-height: $base-checkbox-endsize;
-    font-family: $base-font-family;
-    font-size: $base-checkbox-label-fontsize-mobile;
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-regular;
-    color: $base-font-colour;
+    padding-top: $david-checkbox-label-padding-top-mobile;
+    padding-left: $david-checkbox-endsize + map-get($david-spacing, "4");
+    min-height: $david-checkbox-endsize;
+    font-family: $david-font-family;
+    font-size: $david-checkbox-label-fontsize-mobile;
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-regular;
+    color: $david-font-colour;
     @include md {
-        font-size: $base-checkbox-label-fontsize;
-        padding-top: $base-checkbox-label-padding-top;
+        font-size: $david-checkbox-label-fontsize;
+        padding-top: $david-checkbox-label-padding-top;
     }
     // remove 300ms pause on mobile
     -ms-touch-action: manipulation;
@@ -40,22 +40,22 @@ $base-checkbox-label-padding-top-mobile: ($base-checkbox-endsize - ($base-line-h
 }
 
 //checkbox outer border
-.base-checkbox__label:before {
+.david-checkbox__label:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: $base-checkbox-endsize;
-    height: $base-checkbox-endsize;
-    border: $base-checkbox-borderwidth solid currentColor;
+    width: $david-checkbox-endsize;
+    height: $david-checkbox-endsize;
+    border: $david-checkbox-borderwidth solid currentColor;
 }
 
 // checkbox tick when checked
-.base-checkbox__label:after {
+.david-checkbox__label:after {
     content: "";
     position: absolute;
-    top: $base-radio-dotspacing;
-    left: $base-radio-dotspacing;
+    top: $david-radio-dotspacing;
+    left: $david-radio-dotspacing;
     top: px-to-rem(13);
     left: px-to-rem(9);
     width: px-to-rem(25);
@@ -71,20 +71,20 @@ $base-checkbox-label-padding-top-mobile: ($base-checkbox-endsize - ($base-line-h
 }
 
 // hide browser default radio component
-.base-checkbox__input {
+.david-checkbox__input {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
     opacity: 0;
-    width: $base-checkbox-endsize;
-    height: $base-checkbox-endsize;
+    width: $david-checkbox-endsize;
+    height: $david-checkbox-endsize;
 }
 
-.base-checkbox__input:checked + .base-checkbox__label:after {
+.david-checkbox__input:checked + .david-checkbox__label:after {
     opacity: 1;
 }
 
-.base-checkbox__input:focus + .base-checkbox__label {
+.david-checkbox__input:focus + .david-checkbox__label {
     @include focus-style;
 }

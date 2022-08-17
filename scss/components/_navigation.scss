@@ -1,14 +1,14 @@
-.base-navbutton {
+.david-navbutton {
   align-self: center;
   /* border:0; */
   color: inherit;
   /* default hide the button */
   display: none;
   cursor: pointer;
-  font-family: $base-font-family;
-  font-size: map-get($base-font-sizes, "text-sm");
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-regular;
+  font-family: $david-font-family;
+  font-size: map-get($david-font-sizes, "text-sm");
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-regular;
   padding: px-to-rem(12) 0;
   &:focus {
     @include focus-style;
@@ -40,13 +40,13 @@
     border-bottom-color: currentColor;
   }
   @include md {
-    font-size: map-get($base-font-sizes, "text");
+    font-size: map-get($david-font-sizes, "text");
     display: none;
   }
 }
 
-.base-navbar {
-  border-bottom: 1px solid map-get($base-colours, "black");
+.david-navbar {
+  border-bottom: 1px solid map-get($david-colours, "black");
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -66,14 +66,14 @@
   }
 }
 
-.base-navbar--open {
+.david-navbar--open {
   display: block !important;
 }
 
-.base-navitem {
+.david-navitem {
   margin: 0;
   display: block;
-  border-bottom: 1px solid map-get($base-colours, "gray");
+  border-bottom: 1px solid map-get($david-colours, "gray");
   padding: 0 px-to-rem(15);
   &:last-child {
     border-bottom: 0;
@@ -85,21 +85,21 @@
   }
 }
 
-.base-navlink {
+.david-navlink {
   cursor: pointer;
   color: inherit;
-  @include base-link-decoration;
+  @include david-link-decoration;
   text-decoration: none;
-  font-family: $base-font-family;
-  font-size: map-get($base-font-sizes, "text-sm");
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-regular;
+  font-family: $david-font-family;
+  font-size: map-get($david-font-sizes, "text-sm");
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-regular;
   padding: px-to-rem(11) px-to-rem(1);
   display: block;
   margin: px-to-rem(3) 0;
   @include md {
     padding: px-to-rem(15) px-to-rem(8);
-    font-size: map-get($base-font-sizes, "text");
+    font-size: map-get($david-font-sizes, "text");
     margin-right: px-to-rem(3);
   }
   &:link {
@@ -110,17 +110,17 @@
   }
   &:hover {
     color: inherit;
-    @include base-link-decoration--hover;
+    @include david-link-decoration--hover;
   }
   &:focus {
     @include focus-style;
   }
   &[aria-current="page"] {
     color: inherit;
-    border-bottom: px-to-rem(4) solid map-get($base-colours, "black");
+    border-bottom: px-to-rem(4) solid map-get($david-colours, "black");
     padding-bottom: px-to-rem(7);
-    font-weight: $base-font-weight-bold;
-    box-shadow: 0 px-to-rem(3) 0 0 map-get($base-colours, "black");
+    font-weight: $david-font-weight-bold;
+    box-shadow: 0 px-to-rem(3) 0 0 map-get($david-colours, "black");
     @include md {
       border-bottom-width: px-to-rem(4);
       padding-bottom: px-to-rem(11);

@@ -2,141 +2,141 @@
 
 /* default heading & text setup */
 @mixin baseheading {
-  font-family: $base-heading-family;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-bold;
-  color: $base-heading-colour;
+  font-family: $david-heading-family;
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-bold;
+  color: $david-heading-colour;
   margin-top: 0;
   display: block;
 }
 
 @mixin basebody {
-  font-family: $base-font-family;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-regular;
-  color: $base-font-colour;
+  font-family: $david-font-family;
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-regular;
+  color: $david-font-colour;
   margin-top: 0;
   display: block;
 }
 
 
 
-.base-heading-h1 {
+.david-heading-h1 {
   @include baseheading;
-  font-size: map-get($base-font-sizes, 'h1-sm');
-  margin-bottom: map-get($base-spacing, '4'); 
+  font-size: map-get($david-font-sizes, 'h1-sm');
+  margin-bottom: map-get($david-spacing, '4'); 
   @include md {
-    font-size: map-get($base-font-sizes, 'h1');
-    margin-bottom: map-get($base-spacing, '5'); 
+    font-size: map-get($david-font-sizes, 'h1');
+    margin-bottom: map-get($david-spacing, '5'); 
   }
 } 
 
-.base-heading-h2 {
+.david-heading-h2 {
   @include baseheading;
-  font-size: map-get($base-font-sizes, 'h2-sm');
-  margin-bottom: map-get($base-spacing, '4');
+  font-size: map-get($david-font-sizes, 'h2-sm');
+  margin-bottom: map-get($david-spacing, '4');
     @include md {
-    font-size: map-get($base-font-sizes, 'h2');
-    margin-bottom: map-get($base-spacing, '5'); 
+    font-size: map-get($david-font-sizes, 'h2');
+    margin-bottom: map-get($david-spacing, '5'); 
   }
 }
 
-.base-heading-h3 {
+.david-heading-h3 {
   @include baseheading;
-  font-size: map-get($base-font-sizes, 'h3-sm');
-  margin-bottom: map-get($base-spacing, '4');
+  font-size: map-get($david-font-sizes, 'h3-sm');
+  margin-bottom: map-get($david-spacing, '4');
     @include md {
-    font-size: map-get($base-font-sizes, 'h3');
-    margin-bottom: map-get($base-spacing, '4'); 
+    font-size: map-get($david-font-sizes, 'h3');
+    margin-bottom: map-get($david-spacing, '4'); 
   }
 }
 
-.base-heading-h4 {
+.david-heading-h4 {
   @include baseheading;
-  font-size: map-get($base-font-sizes, 'h4-sm');
-  margin-bottom: map-get($base-spacing, '4'); 
+  font-size: map-get($david-font-sizes, 'h4-sm');
+  margin-bottom: map-get($david-spacing, '4'); 
     @include md {
-    font-size: map-get($base-font-sizes, 'h4');
-    margin-bottom: map-get($base-spacing, '4'); 
+    font-size: map-get($david-font-sizes, 'h4');
+    margin-bottom: map-get($david-spacing, '4'); 
   }
 }
 
-.base-body-large {
+.david-body-large {
   @include basebody;
-  font-size: map-get($base-font-sizes, 'intro-text-sm');
-  margin-bottom: map-get($base-spacing, '6');
+  font-size: map-get($david-font-sizes, 'intro-text-sm');
+  margin-bottom: map-get($david-spacing, '6');
     @include md {
-    font-size: map-get($base-font-sizes, 'intro-text');
-    margin-bottom: map-get($base-spacing, '7'); 
+    font-size: map-get($david-font-sizes, 'intro-text');
+    margin-bottom: map-get($david-spacing, '7'); 
   }
 }
 
-.base-body {
+.david-body {
   @include basebody;
-  font-size: map-get($base-font-sizes, 'text-sm');
-  margin-bottom: map-get($base-spacing, '4');
+  font-size: map-get($david-font-sizes, 'text-sm');
+  margin-bottom: map-get($david-spacing, '4');
     @include md {
-    font-size: map-get($base-font-sizes, 'text');
-    margin-bottom: map-get($base-spacing, '5'); 
+    font-size: map-get($david-font-sizes, 'text');
+    margin-bottom: map-get($david-spacing, '5'); 
   }
 }
 
-.base-body-small {
+.david-body-small {
   @include basebody;
-  font-size: map-get($base-font-sizes, 'small-text-sm');
-  margin-bottom: map-get($base-spacing, '4');
+  font-size: map-get($david-font-sizes, 'small-text-sm');
+  margin-bottom: map-get($david-spacing, '4');
   @include md {
-    font-size: map-get($base-font-sizes, 'small-text');
-    margin-bottom: map-get($base-spacing, '5'); 
+    font-size: map-get($david-font-sizes, 'small-text');
+    margin-bottom: map-get($david-spacing, '5'); 
   }
 }
 
-.base-body + .base-heading-h2, .base-list + .base-heading-h2, .base-video-container + .base-heading-h2, .base-table + .base-heading-h2 {
-  padding-top: map-get($base-spacing, '2');
+.david-body + .david-heading-h2, .david-list + .david-heading-h2, .david-video-container + .david-heading-h2, .david-table + .david-heading-h2 {
+  padding-top: map-get($david-spacing, '2');
 }
 
-.base-body + .base-heading-h3 , .base-list + .base-heading-h3 , .base-video-container + .base-heading-h3, .base-table + .base-heading-h3 {
-  padding-top: map-get($base-spacing, '2');
+.david-body + .david-heading-h3 , .david-list + .david-heading-h3 , .david-video-container + .david-heading-h3, .david-table + .david-heading-h3 {
+  padding-top: map-get($david-spacing, '2');
 }
 
-.base-body + .base-heading-h4, .base-list + .base-heading-h4, .base-video-container + .base-heading-h4, .base-table + .base-heading-h4 {
-  padding-top: map-get($base-spacing, '2');
+.david-body + .david-heading-h4, .david-list + .david-heading-h4, .david-video-container + .david-heading-h4, .david-table + .david-heading-h4 {
+  padding-top: map-get($david-spacing, '2');
 }
 
-.base-body + .base-table>.base-table__caption>.base-heading-h2, .base-body + .base-table>.base-table__caption>.base-heading-h3, .base-body + .base-table>.base-table__caption>.base-heading-h4 {
-  padding-top: map-get($base-spacing, '2');
+.david-body + .david-table>.david-table__caption>.david-heading-h2, .david-body + .david-table>.david-table__caption>.david-heading-h3, .david-body + .david-table>.david-table__caption>.david-heading-h4 {
+  padding-top: map-get($david-spacing, '2');
 }
 
-.base-body-bold {
-  font-weight: $base-font-weight-bold;
+.david-body-bold {
+  font-weight: $david-font-weight-bold;
 }
 
-.base-list {
+.david-list {
   @include basebody;
-  font-size: map-get($base-font-sizes, 'text-sm');
-  margin-bottom: map-get($base-spacing, '4');
-  padding-left: map-get($base-spacing, '5');
+  font-size: map-get($david-font-sizes, 'text-sm');
+  margin-bottom: map-get($david-spacing, '4');
+  padding-left: map-get($david-spacing, '5');
     @include md {
-    font-size: map-get($base-font-sizes, 'text');
-    margin-bottom: map-get($base-spacing, '5'); 
+    font-size: map-get($david-font-sizes, 'text');
+    margin-bottom: map-get($david-spacing, '5'); 
   }
   li {
-    margin-bottom: map-get($base-spacing, '1');
+    margin-bottom: map-get($david-spacing, '1');
   }
 }
 
-.base-list--number {
+.david-list--number {
   list-style-type: decimal;
 }
 
-.base-list--bullet {
+.david-list--bullet {
   list-style-type: disc; 
 }
 
-.base-body-block {
-  padding:map-get($base-spacing, '3');
+.david-body-block {
+  padding:map-get($david-spacing, '3');
   display: inline-block;
   @include md{
-    padding:map-get($base-spacing, '4');
+    padding:map-get($david-spacing, '4');
   }
 }

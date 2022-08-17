@@ -1,56 +1,56 @@
-.base-button {
-  font-family: $base-font-family;
-  font-size: map-get($base-font-sizes, "text");
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-bold;
+.david-button {
+  font-family: $david-font-family;
+  font-size: map-get($david-font-sizes, "text");
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-bold;
   text-align: left;
-  color: $base-font-colour;
+  color: $david-font-colour;
   padding: px-to-rem(10) px-to-rem(14);
-  border: 2px solid $base-font-colour;
+  border: 2px solid $david-font-colour;
   border-radius: 0;
-  background-color: map-get($base-colours, "white");
-  box-shadow: 0 0 0 px-to-rem(1) map-get($base-colours, "white");
+  background-color: map-get($david-colours, "white");
+  box-shadow: 0 0 0 px-to-rem(1) map-get($david-colours, "white");
   display: inline-block;
   position: relative;
   cursor: pointer;
   width: auto;
-  margin-top: map-get($base-spacing, "1");
+  margin-top: map-get($david-spacing, "1");
   margin-left: 0;
-  margin-right: map-get($base-spacing, "3");
-  margin-bottom: map-get($base-spacing, "6");
+  margin-right: map-get($david-spacing, "3");
+  margin-bottom: map-get($david-spacing, "6");
   &:focus {
     @include focus-style;
   }
   &:hover {
-    background-color: map-get($base-colours, "black");
-    color: map-get($base-colours, "white");
+    background-color: map-get($david-colours, "black");
+    color: map-get($david-colours, "white");
   }
   &:active {
     top: px-to-rem(2);
   }
 }
 
-.base-button-group {
+.david-button-group {
   display: block;
-  margin-bottom: map-get($base-spacing, "4");
-  .base-button {
-    margin-bottom: map-get($base-spacing, "3");
+  margin-bottom: map-get($david-spacing, "4");
+  .david-button {
+    margin-bottom: map-get($david-spacing, "3");
   }
-  .base-link {
-    font-size: map-get($base-font-sizes, "text"); 
+  .david-link {
+    font-size: map-get($david-font-sizes, "text"); 
     display:inline-block;
-    margin-top: map-get($base-spacing, "1");
+    margin-top: map-get($david-spacing, "1");
     margin-left: 0;
-    margin-right: map-get($base-spacing, "3");
-    margin-bottom: map-get($base-spacing, "3");
+    margin-right: map-get($david-spacing, "3");
+    margin-bottom: map-get($david-spacing, "3");
     text-align: left;
   }
 }
 
 /* colouring selector to colour button by class */
 
-@each $name, $value in $base-colours {
-  .base-button--#{$name} {
+@each $name, $value in $david-colours {
+  .david-button--#{$name} {
     background-color: $value;
   }
 }

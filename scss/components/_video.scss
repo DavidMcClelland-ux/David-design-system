@@ -1,13 +1,13 @@
-.base-video-container {
+.david-video-container {
     position: relative;
     display:block;
-    padding-top: map-get($base-spacing, '8');
+    padding-top: map-get($david-spacing, '8');
     padding-bottom: 56.25%;
     height:0;
     overflow: hidden;
-    margin-bottom: map-get($base-spacing, '5');
+    margin-bottom: map-get($david-spacing, '5');
     @include md {
-        margin-bottom: map-get($base-spacing, '6');
+        margin-bottom: map-get($david-spacing, '6');
     }
     iframe {
         position: absolute;

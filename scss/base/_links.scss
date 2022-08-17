@@ -1,54 +1,54 @@
 // default set up to use new underlines
-$base-font-underline: true;
+$david-font-underline: true;
 
 // new text decoration settings
-@mixin base-link-decoration {
+@mixin david-link-decoration {
   text-decoration: underline;
   text-decoration-color: inherit;
 
-  @if ($base-font-underline) {
+  @if ($david-font-underline) {
     text-decoration-thickness: 1px;
     text-underline-offset: px-to-rem(1);
   }
 }
 
-@mixin base-link-decoration--hover {
+@mixin david-link-decoration--hover {
   text-decoration: underline;
   text-decoration-color: inherit;
 
-  @if ($base-font-underline) {
+  @if ($david-font-underline) {
     text-decoration-thickness: 3px;
   }
 }
 
-.base-link {
-  font-family: $base-font-family;
-  line-height: $base-line-height;
-  font-weight: $base-font-weight-regular;
+.david-link {
+  font-family: $david-font-family;
+  line-height: $david-line-height;
+  font-weight: $david-font-weight-regular;
   cursor: pointer;
-  color: $base-link-colour;
-  @include base-link-decoration;
-  /* background-color: map-get($base-colours, "white"); */
+  color: $david-link-colour;
+  @include david-link-decoration;
+  /* background-color: map-get($david-colours, "white"); */
   /* padding:1px; */
   &:link {
-    color: $base-link-colour;
+    color: $david-link-colour;
   }
   &:visited {
-    color: $base-link-colour--visited;
+    color: $david-link-colour--visited;
   }
   &:hover {
-    color: $base-link-colour--hover;
-    @include base-link-decoration--hover;
+    color: $david-link-colour--hover;
+    @include david-link-decoration--hover;
   }
   &:focus {
     @include focus-style;
-    background-color: map-get($base-colours, "white");
-    color: map-get($base-colours, "black") !important;
+    background-color: map-get($david-colours, "white");
+    color: map-get($david-colours, "black") !important;
   }
 }
 
 /* styling to match colour of link to text colour on coloured backgrounds to maintain colour contrast */
-.base-link--textcolor {
+.david-link--textcolor {
   color: inherit !important;
   &:link {
     color: inherit !important;
@@ -61,7 +61,7 @@ $base-font-underline: true;
   }
   &:focus {
     @include focus-style;
-    background-color: map-get($base-colours, "white");
-    color: map-get($base-colours, "black") !important;
+    background-color: map-get($david-colours, "white");
+    color: map-get($david-colours, "black") !important;
   }
 }

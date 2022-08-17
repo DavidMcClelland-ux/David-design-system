@@ -1,4 +1,4 @@
-.base-width-container{
+.david-width-container{
   max-width: 1016px;
   position: relative;
   margin-left: px-to-rem(16);
@@ -17,24 +17,24 @@
   }  
 }
 
-.base-main-wrapper{
-  padding-top: map-get($base-spacing, '7');
-  padding-bottom: map-get($base-spacing, '5');
+.david-main-wrapper{
+  padding-top: map-get($david-spacing, '7');
+  padding-bottom: map-get($david-spacing, '5');
   @include md {
-    padding-top: map-get($base-spacing, '10');
-    padding-bottom: map-get($base-spacing, '9');
+    padding-top: map-get($david-spacing, '10');
+    padding-bottom: map-get($david-spacing, '9');
   }
 }
 
 
-@each $name, $value in $base-spacing {
-  .base-bottom-margin--#{$name} {
+@each $name, $value in $david-spacing {
+  .david-bottom-margin--#{$name} {
     margin-bottom: $value !important;
   }   
 }
 
-@each $name, $value in $base-spacing {
-  .base-top-margin--#{$name} {
+@each $name, $value in $david-spacing {
+  .david-top-margin--#{$name} {
     margin-top: $value !important;
   }   
 }

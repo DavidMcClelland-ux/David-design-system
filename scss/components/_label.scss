@@ -1,19 +1,19 @@
-.base-label{
-    font-family: $base-font-family;
-    font-size: map-get($base-font-sizes, 'text-sm');
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-regular;
-    color: $base-font-colour;
+.david-label{
+    font-family: $david-font-family;
+    font-size: map-get($david-font-sizes, 'text-sm');
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-regular;
+    color: $david-font-colour;
     display: block;
-    margin-bottom: map-get($base-spacing , '3');
+    margin-bottom: map-get($david-spacing , '3');
     @include md {
-        font-size: map-get($base-font-sizes, 'text');
+        font-size: map-get($david-font-sizes, 'text');
       }
 }
 
 //widths based on screen size
-@each $name, $value in $base-grid-widths {
-  .base-label__width--#{$name} {
+@each $name, $value in $david-grid-widths {
+  .david-label__width--#{$name} {
     width:100%;
     @include md { 
       width: $value;
@@ -21,38 +21,38 @@
   }   
 }
 
-.base-label--h1{
-  font-weight: $base-font-weight-bold;
-  font-size: map-get($base-font-sizes, 'h1-sm');
+.david-label--h1{
+  font-weight: $david-font-weight-bold;
+  font-size: map-get($david-font-sizes, 'h1-sm');
   @include md {
-    font-size: map-get($base-font-sizes, 'h1');
+    font-size: map-get($david-font-sizes, 'h1');
   }
 }
 
-.base-label--h2{
-  font-weight: $base-font-weight-bold;
-  font-size: map-get($base-font-sizes, 'h2-sm');
+.david-label--h2{
+  font-weight: $david-font-weight-bold;
+  font-size: map-get($david-font-sizes, 'h2-sm');
   @include md {
-    font-size: map-get($base-font-sizes, 'h2');
+    font-size: map-get($david-font-sizes, 'h2');
   }
 }
 
-.base-label--h3{
-  font-weight: $base-font-weight-bold;
-  font-size: map-get($base-font-sizes, 'h3-sm');
+.david-label--h3{
+  font-weight: $david-font-weight-bold;
+  font-size: map-get($david-font-sizes, 'h3-sm');
   @include md {
-    font-size: map-get($base-font-sizes, 'h3');
+    font-size: map-get($david-font-sizes, 'h3');
   }
 }
 
-.base-label--h4{
-  font-weight: $base-font-weight-bold;
-  font-size: map-get($base-font-sizes, 'h4-sm');
+.david-label--h4{
+  font-weight: $david-font-weight-bold;
+  font-size: map-get($david-font-sizes, 'h4-sm');
   @include md {
-    font-size: map-get($base-font-sizes, 'h4');
+    font-size: map-get($david-font-sizes, 'h4');
   }
 }
 
-.base-label--bold{
-  font-weight: $base-font-weight-bold;
+.david-label--bold{
+  font-weight: $david-font-weight-bold;
 }

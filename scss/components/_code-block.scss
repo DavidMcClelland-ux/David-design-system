@@ -8,44 +8,44 @@ $code-colour--value: #cb0003;
 
 pre,
 code {
-    font-family: $base-code-family;
-    line-height: $base-line-height;
-    color: $base-font-colour;
-    font-size: map-get($base-font-sizes, "text-sm");
+    font-family: $david-code-family;
+    line-height: $david-line-height;
+    color: $david-font-colour;
+    font-size: map-get($david-font-sizes, "text-sm");
     @include md {
-        font-size: map-get($base-font-sizes, "text");
+        font-size: map-get($david-font-sizes, "text");
     }
     white-space: pre-wrap;
     word-wrap: break-word;
     padding: 0;
     margin: 0;
 }
-.base-code-block {
+.david-code-block {
     position: relative;
     display: block;
-    border-left: 4px solid map-get($base-colours, "black");
+    border-left: 4px solid map-get($david-colours, "black");
     height: auto;
     padding: 0;
-    margin-bottom: map-get($base-spacing, "6");
+    margin-bottom: map-get($david-spacing, "6");
     background-color: inherit;
     @include md {
-        margin-bottom: map-get($base-spacing, "8");
+        margin-bottom: map-get($david-spacing, "8");
     }
     figcaption {
-        padding: map-get($base-spacing, "5") map-get($base-spacing, "5") 0 map-get($base-spacing, "5");
-        margin-bottom: map-get($base-spacing, '1' );
+        padding: map-get($david-spacing, "5") map-get($david-spacing, "5") 0 map-get($david-spacing, "5");
+        margin-bottom: map-get($david-spacing, '1' );
         background-color: inherit;
         @include basebody;
-        font-weight: $base-font-weight-bold;
-        font-size: map-get($base-font-sizes, "text-sm");
+        font-weight: $david-font-weight-bold;
+        font-size: map-get($david-font-sizes, "text-sm");
         @include md {
-            font-size: map-get($base-font-sizes, "text");
+            font-size: map-get($david-font-sizes, "text");
         }
     }
 
-    /* .base-code-block--box{
+    /* .david-code-block--box{
         display:block;
-        padding: map-get($base-spacing, '3');
+        padding: map-get($david-spacing, '3');
     }
     iframe {
 resize:vertical;
@@ -57,26 +57,26 @@ resize:vertical;
         }
     } */
 }
-.base-code-block--code {
+.david-code-block--code {
     background-color: inherit;
-    padding: map-get($base-spacing, "5");
+    padding: map-get($david-spacing, "5");
     margin: 0;
 }
 
-.base-code-block--actions {
+.david-code-block--actions {
     background-color: inherit;
-    padding-top: map-get($base-spacing, "4");
-    padding-left: map-get($base-spacing, "5");
-    padding-right: map-get($base-spacing, "5");
-    padding-bottom: map-get($base-spacing, "3");
+    padding-top: map-get($david-spacing, "4");
+    padding-left: map-get($david-spacing, "5");
+    padding-right: map-get($david-spacing, "5");
+    padding-bottom: map-get($david-spacing, "3");
 }
 
-.base-code--tag {
+.david-code--tag {
     color: $code-colour--tag;
 }
-.base-code--attribute {
+.david-code--attribute {
     color: $code-colour--attribute;
 }
-.base-code--value {
+.david-code--value {
     color: $code-colour--value;
 }

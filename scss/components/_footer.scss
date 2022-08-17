@@ -1,23 +1,23 @@
-.base-footer {
-    font-family: $base-font-family;
-    font-size: map-get($base-font-sizes, 'text-sm');
-    line-height: $base-line-height;
-    font-weight: $base-font-weight-regular; 
-    border-top: 1px solid map-get($base-colours, 'black'); 
-    padding-bottom: map-get($base-spacing , '7'); 
+.david-footer {
+    font-family: $david-font-family;
+    font-size: map-get($david-font-sizes, 'text-sm');
+    line-height: $david-line-height;
+    font-weight: $david-font-weight-regular; 
+    border-top: 1px solid map-get($david-colours, 'black'); 
+    padding-bottom: map-get($david-spacing , '7'); 
     @include md {
-        font-size: map-get($base-font-sizes, 'text-sm');
-        padding-bottom: map-get($base-spacing , '7'); 
+        font-size: map-get($david-font-sizes, 'text-sm');
+        padding-bottom: map-get($david-spacing , '7'); 
     }
 
 }
 
-.base-footer-navitem {
+.david-footer-navitem {
     display:block;
-    margin-top:map-get($base-spacing , '5'); 
+    margin-top:map-get($david-spacing , '5'); 
     @include md {
         display: inline-block;
-        margin-top:map-get($base-spacing , '7'); 
-        padding-right:map-get($base-spacing , '9');  
+        margin-top:map-get($david-spacing , '7'); 
+        padding-right:map-get($david-spacing , '9');  
     }
 }

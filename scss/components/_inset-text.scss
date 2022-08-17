@@ -1,13 +1,13 @@
-.base-inset-text {
-    padding:map-get($base-spacing, '3') 0 map-get($base-spacing, '3')  map-get($base-spacing, '5');
-    border-left: px-to-rem(8) solid map-get($base-colours, 'black');
+.david-inset-text {
+    padding:map-get($david-spacing, '3') 0 map-get($david-spacing, '3')  map-get($david-spacing, '5');
+    border-left: px-to-rem(8) solid map-get($david-colours, 'black');
     display:block;
     margin-top: 0;
-    margin-bottom: map-get($base-spacing, '4');
+    margin-bottom: map-get($david-spacing, '4');
     @include md {
-    margin-bottom: map-get($base-spacing, '5'); 
+    margin-bottom: map-get($david-spacing, '5'); 
   }
-    .base-body:last-of-type {
+    .david-body:last-of-type {
         margin-bottom: 0;
     }
 }

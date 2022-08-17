@@ -1,8 +1,8 @@
 
 // font size variables
-$base-line-height: 1.32;
+$david-line-height: 1.32;
 
-$base-font-sizes: (
+$david-font-sizes: (
   'header-logo': px-to-rem(28),
   'h1': px-to-rem(48),
   'h2': px-to-rem(36),
@@ -21,7 +21,7 @@ $base-font-sizes: (
   'small-text-sm': px-to-rem(14),
 );
 
-$base-spacing: (
+$david-spacing: (
   '0': 0,
   '1': px-to-rem(5),
   '2': px-to-rem(7),
@@ -37,7 +37,7 @@ $base-spacing: (
   '12': px-to-rem(70),
 );
 
-$base-grid-widths: (
+$david-grid-widths: (
   one-sixth: 16.6666%,
   one-quarter: 25%,
   one-third: 33.3333%,

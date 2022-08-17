@@ -1,12 +1,12 @@
-.base-block {
-    background-color: map-get($base-colours, 'white');
-    padding-top: map-get($base-spacing, '4'); 
-    padding-bottom: map-get($base-spacing, '4'); 
-    margin-bottom: map-get($base-spacing, '7'); 
+.david-block {
+    background-color: map-get($david-colours, 'white');
+    padding-top: map-get($david-spacing, '4'); 
+    padding-bottom: map-get($david-spacing, '4'); 
+    margin-bottom: map-get($david-spacing, '7'); 
     display: block;
     @include md {
-      padding-top: map-get($base-spacing, '5'); 
-      padding-bottom: map-get($base-spacing, '5'); 
-      margin-bottom: map-get($base-spacing, '7');
+      padding-top: map-get($david-spacing, '5'); 
+      padding-bottom: map-get($david-spacing, '5'); 
+      margin-bottom: map-get($david-spacing, '7');
     }
 }

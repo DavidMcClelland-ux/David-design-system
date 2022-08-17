@@ -1,12 +1,12 @@
 /* What to show when jaavscript is enabled in browser */
-.js-enabled .base-navbutton{
+.js-enabled .david-navbutton{
     display:inline-block;
     @include md {
         display:none;
     }
 }
 
-.js-enabled .base-navbar{
+.js-enabled .david-navbar{
     display:none;
     @include md {
         display:block;
