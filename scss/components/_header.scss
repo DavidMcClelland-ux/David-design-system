@@ -16,7 +16,7 @@
   font-family: $david-header-family;
   font-size: map-get($david-font-sizes, 'header-logo-sm');
   line-height: $david-line-height;
-  font-weight: $david-font-weight-bold;
+  font-weight: $david-font-weight-semibold;
   color: inherit;
   display: inline-block;
   padding: map-get($david-spacing, '4') 0; 

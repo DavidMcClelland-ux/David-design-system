@@ -4,7 +4,7 @@
 @mixin baseheading {
   font-family: $david-heading-family;
   line-height: $david-line-height;
-  font-weight: $david-font-weight-bold;
+  /* font-weight: $david-font-weight-bold; */
   color: $david-heading-colour;
   margin-top: 0;
   display: block;
@@ -23,6 +23,7 @@
 
 .david-heading-h1 {
   @include baseheading;
+  font-weight: $david-font-weight-bold;
   font-size: map-get($david-font-sizes, 'h1-sm');
   margin-bottom: map-get($david-spacing, '4'); 
   @include md {
@@ -33,6 +34,7 @@
 
 .david-heading-h2 {
   @include baseheading;
+  font-weight: $david-font-weight-semibold;
   font-size: map-get($david-font-sizes, 'h2-sm');
   margin-bottom: map-get($david-spacing, '4');
     @include md {
@@ -43,6 +45,7 @@
 
 .david-heading-h3 {
   @include baseheading;
+  font-weight: $david-font-weight-semibold;
   font-size: map-get($david-font-sizes, 'h3-sm');
   margin-bottom: map-get($david-spacing, '4');
     @include md {
@@ -53,6 +56,7 @@
 
 .david-heading-h4 {
   @include baseheading;
+  font-weight: $david-font-weight-semibold;
   font-size: map-get($david-font-sizes, 'h4-sm');
   margin-bottom: map-get($david-spacing, '4'); 
     @include md {
