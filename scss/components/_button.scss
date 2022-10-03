@@ -7,7 +7,7 @@
   color: $david-font-colour;
   padding: px-to-rem(10) px-to-rem(14);
   border: 2px solid $david-font-colour;
-  border-radius: 0;
+  border-radius: 4px;
   background-color: map-get($david-colours, "white");
   box-shadow: 0 0 0 px-to-rem(1) map-get($david-colours, "white");
   display: inline-block;
