@@ -3,8 +3,10 @@
     font-size: map-get($david-font-sizes, 'text-sm');
     line-height: $david-line-height;
     font-weight: $david-font-weight-regular; 
-    border-top: 1px solid map-get($david-colours, 'black'); 
+    border-top: 1px solid map-get($david-colours, 'gray'); 
     padding-bottom: map-get($david-spacing , '7'); 
+    box-shadow: 0 50vh 0 50vh map-get($david-colours, 'light-gray');
+    background-color: map-get($david-colours, 'light-gray');
     @include md {
         font-size: map-get($david-font-sizes, 'text-sm');
         padding-bottom: map-get($david-spacing , '7'); 
